@@ -1,0 +1,130 @@
+
+#footer{
+  background-color: #f0f0f0;
+  border-radius: 50px 50px 0 0;
+  padding: 3rem;
+}
+#footer h2{
+  font-size: 34px;
+  font-weight: var(--bold);
+}
+#footer a:hover{
+  color:var(--primary);
+}
+#footer a, #footer p{
+  color:var(--black);
+  font-size: 18px;
+  font-weight: var(--medium);
+}
+
+#footer .facebook{
+  background-image: url('../img/facebook.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+}
+#footer .facebook:hover{
+  background-image: url('../img/facebook-red.svg');
+  cursor: pointer;
+}
+
+#footer .insta{
+  background-image: url('../img/insta.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+}
+#footer .insta:hover{
+  background-image: url('../img/insta-red.svg');
+  cursor: pointer;
+}
+
+#footer .youtube{
+  background-image: url('../img/youtube.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+}
+#footer .youtube:hover{
+  background-image: url('../img/youtube-red.svg');
+  cursor: pointer;
+}
+
+#footer .twit{
+  background-image: url('../img/x.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+}
+#footer .twit:hover{
+  background-image: url('../img/x-red.svg');
+  cursor: pointer;
+}
+
+#footer .pinter{
+  background-image: url('../img/pinter.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+}
+#footer .pinter:hover{
+  background-image: url('../img/pinter-red.svg');
+  cursor: pointer;
+}
+
+#copyright{
+  background-color: var(--primary);
+}
+#copyright p{
+ font-size: 18px;
+}
+
+.cont-mob{
+  display: none;
+}
+@media(max-width:992px) {
+
+  #footer{
+    padding: 3rem 0rem;
+  }
+  
+#footer .container .row .col-md-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.foot-head:first-child{
+  display: none;
+}
+.foot-head{
+  text-align: center;
+}
+#footer a, #footer p {
+  font-size: 14px;
+}
+
+.cont-mob{
+  display: flex;
+}
+.cont-desk{
+  display: none;
+}
+
+#copyright p{
+  font-size: 14px;
+}
+#footer h2 {
+  font-size: 30px;
+}
+}

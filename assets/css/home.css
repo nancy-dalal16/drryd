@@ -1,0 +1,364 @@
+#hero {
+ height: 110vh;
+ background-color: var(--whitegray);
+ width:100%;
+ border-radius: 0 0 50px 50px;
+ z-index: 2;
+ position: relative;
+ overflow: hidden;
+  background-image: url('../img/lines.svg');
+  background-size: contain;
+  background-position:  160% 50%;
+  background-repeat: no-repeat;
+}
+.banner-section{
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-section h1{
+  font-size: 3.75rem;
+  font-weight: var(--bold);
+}
+
+.btn-holder .apple{
+  background-color: var(--black);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border:1px solid #A6A6A6;
+}
+.btn-holder .play{
+  background-color: var(--black);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border:1px solid #A6A6A6;
+}
+.btn-holder .det h4{
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: 'Arial';
+  font-weight: 500;
+}
+.btn-holder .det p{
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.2;
+}
+.btn-holder .apple .inner-ele .apple-icon{
+  background-image: url('../img/apple_white.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 40px;
+}
+.banner-section .images img{
+  transform: translate(100px,0)
+}
+.banner-section .images img.hand-img{
+  z-index: 2;
+}
+.banner-section .images img.car-img{
+  position: absolute;
+  transform: translate(0,0);
+  z-index: 1;
+}
+.banner-section .images img{
+  position: absolute;
+  top: 0%;
+}
+
+#commit{
+  background: var(--primary);
+  margin-top: -5rem;
+  height: 680px;
+  border-radius: 0 0 50px 50px;
+
+}
+.commit-contain img.phone-img{
+  object-fit: cover;
+  object-position: center;
+  height: 470px;
+  border-radius: 50px;
+}
+#commit p{
+  font-weight: var(--medium);
+}
+.rides h4{
+  font-size: 22px;
+  font-weight: var(--bold);
+}
+#howit{
+  margin-top:25rem;
+}
+@keyframes scroll {
+
+  0% {
+    background-position: 500px 0;
+  }
+  20% {
+    background-position: 300px 0;
+  }
+  100% {
+    background-position:center;
+  }
+}
+
+#howit .container{
+  background-color: var(--whitegray);
+  background-image: url('../img/gray_lines.svg');
+ /* animation: scroll 3s linear; */
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  padding: 2rem 4rem;
+}
+
+#slider1 img, #slider2 img, #slider3 img{
+  width: 25%;
+}
+@keyframes scrollFwd {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+@keyframes scrollInv {
+  0% {
+    transform: translateX(calc(-250px * 10));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#slider1, #slider3{
+  animation: scrollFwd 10s linear infinite;
+  display: flex;
+  position:relative;
+  z-index:-1;
+}
+#slider2{
+  animation: scrollInv 10s linear infinite;
+  display: flex;
+  position:relative;
+  z-index:-1;
+}
+#reviews{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 45%,rgba(255,255,255,0.85) 100%); /* W3C */
+  overflow-x: hidden;
+}
+.icon-desc img{
+  width: 80px;
+}
+.icon-desc h4{
+  font-size: 22px;
+  font-weight: var(--bold);
+}
+#download .left-img{
+  position: relative;
+}
+
+#download .btn-holder{
+  position: absolute;
+  bottom: 5%;
+}
+
+.btn-holder .inner-ele{
+  transition: all 400ms ease;
+  -webkit-transition:  all 400ms ease;
+}
+
+.btn-holder .apple:hover{
+  background-color: var(--white);
+  & h4,p{
+    color:black;
+  }
+  & .inner-ele .apple-icon{
+    background-image: url('../img/apple_black.svg');
+  }
+  & .inner-ele{
+    color:black;
+    scale: 0.8;
+    transform:translate(-20%,-20%)
+  }
+}
+
+.btn-holder .play:hover{
+  background-color: var(--white);
+  & h4,p{
+    color:black;
+  }
+  & .inner-ele{
+   
+    color:black;
+    scale: 0.8;
+    transform:translate(-20%,-20%)
+  }
+}
+
+.banner-section .mobile-img{
+  display: none !important;
+}
+
+.left-mob{
+  display: none !important;
+}
+.left-desk{
+  display: flex;
+}
+
+#download, #howit, #reviews{
+  overflow: hidden;
+}
+
+@media(max-width:992px){
+ 
+  #hero .row .images{
+    display: none !important;
+  }
+  .banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-section h1 {
+    font-size: 34px;
+    text-align: center;
+    margin-top: 5rem;
+}
+.banner-section p{
+  text-align: center;
+}
+.btn-holder {
+  column-gap: 10px !important;
+}
+.btn-holder .apple {
+ padding: 10px;
+}
+.btn-holder .play {
+  padding: 10px;
+ }
+.btn-holder .det h4 {
+  font-size: 18px;
+}
+.btn-holder .det p {
+  font-size: 8px;
+  text-align: left;
+  margin:2px 0;
+}
+.btn-holder .apple .inner-ele .apple-icon{
+  height: 35px;
+  width: 35px;
+}
+.btn-holder .play .inner-ele img{
+  height: 35px;
+  width: 35px;
+}
+.banner-section{
+  position: relative;
+}
+.banner-section .mobile-img{
+  display: flex !important;
+  transform: translate(35%, 0%);
+}
+
+.banner-section .mobile-img img{
+  /* transform: translate(100px,0) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-section .mobile-img img.hand-img{
+  z-index: 2;
+  right: 70%;
+}
+.banner-section .mobile-img img.car-img{
+  position: absolute;
+  transform: translate(-20px,0);
+  z-index: 1;
+}
+.banner-section .mobile-img img{
+  position: relative;
+  margin: 2rem 0;
+}
+
+#commit{
+  margin-top:-3rem;
+  height: 600px;
+}
+#commit .container .row .col-md-8 .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#commit .row p{
+  text-align: center;
+}
+
+.rides h4{
+  font-size: 18px;
+}
+
+#howit {
+  margin-top: 72rem;
+}
+#howit .container {
+  padding: 3rem 0;
+  background-position: 50% 0;
+}
+#slider1 img, #slider2 img, #slider3 img {
+  width: 50%;
+}
+#download .row .col-md-6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#download .row .col-md-6 .section-title{
+  width: 65%;
+}
+#download .row .col-md-6 p{
+  text-align: center;
+}
+.icon-desc p {
+  text-align: left !important;
+  font-size: 12px;
+}
+.left-mob{
+  display: flex !important;
+}
+.left-desk{
+  display: none !important;
+}
+.icon-desc h4 {
+font-size: 14px;
+}
+.icon-desc img{
+  width: 80px;
+}
+.icon-desc >div{
+  margin:2rem 0;
+}
+#commit{
+  width: 100vw;
+}
+.commit-contain img.phone-img {
+  object-fit: auto;
+  object-position: auto;
+  height: auto;
+  border-radius: 50px;
+}
+
+}
