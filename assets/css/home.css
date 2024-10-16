@@ -221,6 +221,8 @@
   overflow: hidden;
 }
 
+
+
 @media(max-width:992px){
  
   #hero .row .images{
@@ -360,5 +362,7 @@ font-size: 14px;
   height: auto;
   border-radius: 50px;
 }
-
+#download .container .row .col-md-6 div{
+  align-items: center;
+  }
 }
