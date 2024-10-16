@@ -224,7 +224,9 @@
 
 
 @media(max-width:992px){
- 
+ #hero{
+  padding:30rem 0;
+ }
   #hero .row .images{
     display: none !important;
   }
