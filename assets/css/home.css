@@ -315,11 +315,11 @@
 }
 
 #howit {
-  margin-top: 72rem;
+  margin-top: 65rem;
 }
 #howit .container {
   padding: 3rem 0;
-  background-position: 50% 0;
+  background-image: none;
 }
 #slider1 img, #slider2 img, #slider3 img {
   width: 50%;
